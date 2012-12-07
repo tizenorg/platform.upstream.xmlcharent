@@ -41,8 +41,7 @@ non-normative Annex D of [ISO 8879:1986].
 %define xml_sysconf_dir %{_sysconfdir}/xml
 
 %prep
-%setup -n %{name} -c -T
-unzip -aq %{SOURCE0}
+%setup -q
 sed 's|@VERSION@|%{version}|
 s|@DIR@|%{xml_mod_dir}|' %{SOURCE1} >catalog.xml
 sed 's|@VERSION@|%{version}|
