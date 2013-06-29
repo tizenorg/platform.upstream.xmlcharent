@@ -8,6 +8,7 @@ Group:          Productivity/Publishing/XML
 Source0:        http://www.oasis-open.org/committees/docbook/%{name}/%{version}/%{name}-%{version}.zip
 Source1:        catalog.xml
 Source2:        CATALOG.xmlcharent
+Source1001: 	xmlcharent.manifest
 BuildRequires:  sgml-skel
 BuildRequires:  unzip
 %define regcat /usr/bin/sgml-register-catalog
@@ -42,6 +43,7 @@ non-normative Annex D of [ISO 8879:1986].
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 sed 's|@VERSION@|%{version}|
 s|@DIR@|%{xml_mod_dir}|' %{SOURCE1} >catalog.xml
 sed 's|@VERSION@|%{version}|
@@ -128,6 +130,7 @@ if [ ! -f %{xml_sysconf_dir}/%{FOR_ROOT_CAT} -a -x /usr/bin/edit-xml-catalog ] ;
 fi
 
 %files
+%manifest %{name}.manifest
 %defattr(-, root, root)
 # %doc entities-*.html
 %{xml_mod_dir}
