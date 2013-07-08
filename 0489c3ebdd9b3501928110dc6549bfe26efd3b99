@@ -1,0 +1,8 @@
+Change-Id: I0489c3ebdd9b3501928110dc6549bfe26efd3b99
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:38:37 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4986
+Project: platform/upstream/xmlcharent
+Branch: refs/heads/tizen
