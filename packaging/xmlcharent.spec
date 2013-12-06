@@ -5,7 +5,7 @@ License:        BSD-3-Clause
 Summary:        XML Character Entities
 Url:            http://www.oasis-open.org/committees/docbook/xmlcharent/
 Group:          Productivity/Publishing/XML
-Source0:        http://www.oasis-open.org/committees/docbook/%{name}/%{version}/%{name}-%{version}.zip
+Source0:        http://www.oasis-open.org/committees/docbook/%{name}/%{version}/%{name}-%{version}.tar.bz2
 Source1:        catalog.xml
 Source2:        CATALOG.xmlcharent
 Source1001: 	xmlcharent.manifest
